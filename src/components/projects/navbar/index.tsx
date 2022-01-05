@@ -9,19 +9,21 @@ type NavbarViewProps = {
 }
 const NavbarView: FC<NavbarViewProps> = ({ handleSignOut }) => {
   return (
-    <nav className='navbar m-1 mb-2 gap-3 shadow-lg bg-neutral text-neutral-content rounded-box'>
+    <nav className='navbar gap-3 shadow-lg bg-neutral text-neutral-content rounded-box'>
       <div className='flex-none'>
         <button className='btn btn-square btn-ghost'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             fill='none'
             viewBox='0 0 24 24'
-            className='inline-block w-6 h-6 stroke-current'>
+            className='inline-block w-6 h-6 stroke-current'
+          >
             <path
               strokeLinecap='round'
               strokeLinejoin='round'
               strokeWidth='2'
-              d='M4 6h16M4 12h16M4 18h16'></path>
+              d='M4 6h16M4 12h16M4 18h16'
+            ></path>
           </svg>
         </button>
       </div>
@@ -33,7 +35,8 @@ const NavbarView: FC<NavbarViewProps> = ({ handleSignOut }) => {
       <div className='flex-none'>
         <select
           data-choose-theme
-          className='select select-ghost focus:bg-neutral-focus focus:text-neutral-content'>
+          className='select select-ghost focus:bg-neutral-focus focus:text-neutral-content'
+        >
           <option value=''>Default</option>
           <option value='light'>Light</option>
           <option value='dark'>Dark</option>

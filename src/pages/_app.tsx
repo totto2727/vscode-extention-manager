@@ -24,7 +24,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 
   return (
     <FirebaseProvider config={config}>
-      <div className='m-0 h-0 font-sans box-border'>
+      <div className='flex flex-col gap-2 m-2 h-0 font-sans box-border'>
         <header>
           <Navbar />
         </header>
